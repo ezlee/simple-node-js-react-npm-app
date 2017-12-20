@@ -12,7 +12,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -al'
                 sh 'env|sort'
-                sh 'npm config get prefix'
+                sh 'npm config set prefix `pwd`'
                 sh 'npm install' 
             }
         }
