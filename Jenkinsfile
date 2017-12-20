@@ -12,6 +12,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -al'
                 sh 'env|sort'
+                sh 'npm config set unsafe-perm true'
                 sh 'npm config set prefix `pwd`'
                 sh 'npm install' 
             }
