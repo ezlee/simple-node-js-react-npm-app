@@ -9,6 +9,7 @@ pipeline {
         CI = 'true'
     }
     stages {
+        deleteDir()
         stage('Build') {
             steps {
                 sh 'npm install'
