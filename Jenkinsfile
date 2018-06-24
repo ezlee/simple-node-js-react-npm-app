@@ -11,6 +11,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'ls -alh'
+                sh 'whoami'
+                sh 'node -v'
+                sh 'npm -v'
                 sh 'npm install'
             }
         }
