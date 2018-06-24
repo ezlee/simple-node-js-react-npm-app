@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'eis/foundation/nodejs:latest'
+            image 'artifactory.corp.ad.ctc:5000/eis/foundation/nodejs:latest'
             args '-p 3000:3000'
         }
     }
